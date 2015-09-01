@@ -254,8 +254,6 @@ For a given gene symbol(s), this program prints the genomic coordinates of the t
 
 David A. Parry
 
-University of Leeds
-
 =head1 COPYRIGHT AND LICENSE
 
 Copyright 2014  David A. Parry
