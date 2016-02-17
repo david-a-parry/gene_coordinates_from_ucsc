@@ -54,7 +54,7 @@ if ($opts{ensembl}){
 #default to transcript start and end sites
 my $start_fetch = "txStart";
 my $end_fetch = "txEnd";
-if ($opts{coding}){
+if ($opts{cds}){
     $start_fetch = "cdsStart";
     $end_fetch = "cdsEnd";
 }
