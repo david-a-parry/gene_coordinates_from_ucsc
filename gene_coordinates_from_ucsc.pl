@@ -61,7 +61,8 @@ if ($opts{coding}){
 #FOR ENSEMBL QUERIES
 #we need to get transcript names in a separate step
 my %names = ();
-my $dbh = DBI->connect_cached("dbi:mysql:$db:genome-mysql.cse.ucsc.edu", "genome", '');
+my $dbh = DBI->connect_cached("dbi:mysql:$db:genome-mysql.cse.ucsc.edu", "genome", '')
+  or die "Error connecting to 'dbi:mysql:$db:genome-mysql.cse.ucsc.edu' genome.\n";
 foreach my $gene (@genes){
     if ($opts{ensembl}){
         my $command = "SELECT name FROM $db.ensemblToGeneName  WHERE value=?";
